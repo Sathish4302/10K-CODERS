@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors & Combinators</title>
+  <style>
+    /* Universal Selector */
+    * {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Type Selector */
+    h1 {
+      color: darkblue;
+    }
+
+    /* Class Selector */
+    .highlight {
+      background-color: yellow;
+    }
+
+    /* ID Selector */
+    #special {
+      color: green;
+      font-weight: bold;
+    }
+
+    /* Grouping Selector */
+    h2, h3 {
+      color: darkred;
+    }
+
+    /* Descendant Selector */
+    .box p {
+      color: purple;
+    }
+
+    /* Child Selector */
+    .box > p {
+      font-size: 18px;
+    }
+
+    /* Adjacent Sibling Selector */
+    h2 + p {
+      background-color: lightgray;
+    }
+
+    /* General Sibling Selector */
+    h2 ~ p {
+      border-left: 4px solid orange;
+      padding-left: 10px;
+    }
+
+    /* Styling list items inside ul */
+    ul li {
+      color: teal;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Main Heading</h1>
+
+  <p id="special">This paragraph has an ID selector.</p>
+
+  <h2>Subheading</h2>
+  <p>This paragraph comes right after h2 (adjacent sibling).</p>
+  <p>This is another paragraph after h2 (general sibling).</p>
+
+  <div class="box">
+    <p>This is a direct child paragraph (child + descendant).</p>
+    <div>
+      <p>This is a nested paragraph (descendant only).</p>
+    </div>
+  </div>
+
+  <ul>
+    <li>Item One</li>
+    <li>Item Two</li>
+  </ul>
+
+  <h3 class="highlight">This is highlighted using class selector.</h3>
+
+</body>
+</html>
